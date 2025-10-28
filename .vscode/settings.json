@@ -1,0 +1,21 @@
+{
+    "javascript.preferences.importModuleSpecifierEnding": "js",
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    "javascript.preferences.quoteStyle": "single",
+    "javascript.preferences.autoImportFileExcludePatterns": ["**/node_modules/**"],
+    "i18n-ally.localesPaths": ["lang", "symlinks/foundryLang", "symlinks/dndLang"],
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.indent": 4,
+    "i18n-ally.sortKeys": true,
+    "cSpell.words": ["AUTOMATEDCRAFTEDCREATIONS"],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/CVS": true,
+        "**/node_modules": true
+    },
+    "hide-files.files": []
+}

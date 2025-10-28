@@ -1,0 +1,252 @@
+{
+    "name": "Image miroir",
+    "type": "spell",
+    "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+    "system": {
+        "description": {
+            "value": "<p>Trois duplicatas illusoires de votre personne apparaissent dans votre espace. Jusqu'à la fin du sort, les duplicatas se déplacent avec vous et ils imitent vos actions, permutant leur position de sorte qu'il soit impossible de déterminer laquelle des images est réelle. Vous pouvez utiliser votre action pour dissiper les duplicatas illusoires.</p><p>À chaque fois qu'une créature vous prend pour cible avec une attaque pendant la durée du sort, lancez 1d20 pour déterminer si l'attaque ne cible pas plutôt un de vos duplicatas.</p><p>Si vous avez trois duplicatas, vous devez obtenir 6 ou plus sur votre lancer pour diriger la cible de l'attaque vers un duplicata. Avec deux duplicatas, vous devez obtenir 8 ou plus. Avec un seul duplicata, vous devez obtenir 11 ou plus.</p><p>La CA d'un duplicata est égale à 10 + votre modificateur de Dextérité. Si une attaque touche un duplicata, il est détruit. Un duplicata peut être détruit seulement par une attaque qui le touche. Il ignore les autres dégâts et effets. Le sort prend fin si les trois duplicatas sont détruits.</p><p>Une créature n'est pas affectée par ce sort si elle ne peut pas voir, si elle se fie sur un autre sens que la vision, comme la vision aveugle, ou si elle peut percevoir les illusions comme étant fausses, comme avec vision suprême.</p>",
+            "chat": ""
+        },
+        "source": {
+            "custom": "Basic Rules, Player's Handbook pg 260",
+            "revision": 1,
+            "rules": "2014"
+        },
+        "activation": {
+            "type": "action",
+            "condition": "",
+            "value": 1
+        },
+        "duration": {
+            "value": "1",
+            "units": "minute"
+        },
+        "target": {
+            "affects": {
+                "type": "self",
+                "count": "",
+                "choice": false,
+                "special": ""
+            },
+            "template": {
+                "units": "ft",
+                "contiguous": false,
+                "type": ""
+            }
+        },
+        "range": {
+            "units": "self",
+            "special": ""
+        },
+        "uses": {
+            "max": "",
+            "spent": 0,
+            "recovery": []
+        },
+        "ability": "",
+        "level": 2,
+        "school": "ill",
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": 0,
+            "supply": 0
+        },
+        "properties": ["vocal", "somatic"],
+        "activities": {
+            "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "utility",
+                "activation": {
+                    "type": "action",
+                    "value": null,
+                    "override": false
+                },
+                "consumption": {
+                    "targets": [],
+                    "scaling": {
+                        "allowed": false,
+                        "max": ""
+                    },
+                    "spellSlot": true
+                },
+                "description": {
+                    "chatFlavor": ""
+                },
+                "duration": {
+                    "units": "inst",
+                    "concentration": false,
+                    "override": false
+                },
+                "effects": [],
+                "range": {
+                    "override": false,
+                    "units": "self"
+                },
+                "target": {
+                    "prompt": true,
+                    "template": {
+                        "contiguous": false,
+                        "units": "ft"
+                    },
+                    "affects": {
+                        "choice": false
+                    },
+                    "override": false
+                },
+                "uses": {
+                    "spent": 0,
+                    "max": "",
+                    "recovery": []
+                },
+                "roll": {
+                    "formula": "",
+                    "name": "",
+                    "prompt": false,
+                    "visible": false
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "effectConditionText": "",
+                "useConditionReason": "",
+                "macroData": {
+                    "name": "",
+                    "command": ""
+                },
+                "ignoreTraits": {
+                    "idi": false,
+                    "idr": false,
+                    "idv": false,
+                    "ida": false,
+                    "idm": false
+                },
+                "midiProperties": {
+                    "ignoreTraits": [],
+                    "triggeredActivityId": "none",
+                    "triggeredActivityConditionText": "",
+                    "triggeredActivityTargets": "targets",
+                    "triggeredActivityRollAs": "self",
+                    "forceDamageDialog": "false",
+                    "confirmTargets": "default",
+                    "autoTargetType": "any",
+                    "autoTargetAction": "default",
+                    "automationOnly": false,
+                    "otherActivityCompatible": true,
+                    "otherActivityAsParentType": true,
+                    "identifier": "",
+                    "displayActivityName": false,
+                    "rollMode": "default",
+                    "chooseEffects": false,
+                    "toggleEffect": false,
+                    "ignoreFullCover": false,
+                    "removeChatButtons": "default",
+                    "magicEffect": false,
+                    "magicDamage": false,
+                    "noConcentrationCheck": false,
+                    "autoCEEffects": "default",
+                    "autoConsume": false,
+                    "forceConsumeDialog": "default",
+                    "forceRollDialog": "default"
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                    "saveRemoves": true,
+                    "preRemoveConditionText": "",
+                    "postRemoveConditionText": ""
+                },
+                "otherActivityId": "none",
+                "otherActivityAsParentType": true
+            }
+        },
+        "identifier": "mirrorImage",
+        "sourceClass": "",
+        "method": "spell",
+        "prepared": 0
+    },
+    "effects": [],
+    "flags": {
+        "midi-qol": {
+            "effectActivation": false,
+            "forceCEOff": false,
+            "forceCEOn": false,
+            "rollAttackPerTarget": "default",
+            "itemCondition": "",
+            "effectCondition": "",
+            "AoETargetType": "any",
+            "AoETargetTypeIncludeSelf": true,
+            "autoTarget": "default",
+            "removeAttackDamageButtons": "default",
+            "reactionCondition": "",
+            "otherCondition": ""
+        },
+        "midiProperties": {
+            "nodam": false,
+            "fulldam": false,
+            "halfdam": false,
+            "rollOther": false,
+            "critOther": false,
+            "magicdam": false,
+            "magiceffect": false,
+            "concentration": false,
+            "toggleEffect": false,
+            "ignoreTotalCover": false,
+            "autoFailFriendly": false,
+            "offHandWeapon": false,
+            "autoSaveFriendly": false,
+            "confirmTargets": "default",
+            "noConcentrationCheck": false,
+            "idr": false,
+            "idi": false,
+            "idv": false,
+            "ida": false
+        },
+        "core": {},
+        "dnd5e": {
+            "riders": {
+                "activity": []
+            }
+        },
+        "chris-premades": {
+            "info": {
+                "name": "Image miroir",
+                "version": "1.0.0",
+                "settings": ["Image miroir"],
+                "identifier": "mirrorImage",
+                "source": "nolat-automations",
+                "rules": "legacy"
+            },
+            "macros": {
+                "midi": {
+                    "item": ["mirrorImage"]
+                }
+            }
+        },
+        "scene-packer": {
+            "hash": "2d9f54e6cb8548a7d87567ca8b839820c7892671",
+            "sourceId": "Item.rzaJAs4NvtDbt0Kr"
+        }
+    },
+    "folder": null,
+    "_stats": {
+        "compendiumSource": "Compendium.nolat-automations.NASpells.Item.W1tkIlyrXBeQL1kt",
+        "duplicateSource": null,
+        "exportSource": {
+            "worldId": "saison-1",
+            "uuid": "Item.rzaJAs4NvtDbt0Kr",
+            "coreVersion": "13.350",
+            "systemId": "dnd5e",
+            "systemVersion": "5.1.10"
+        },
+        "coreVersion": "13.350",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1761665874099,
+        "modifiedTime": 1761665874099,
+        "lastModifiedBy": "S16Hc7R0JtsOUSv0"
+    },
+    "ownership": {
+        "default": 0
+    },
+    "_id": "rzaJAs4NvtDbt0Kr",
+    "_key": "!items!rzaJAs4NvtDbt0Kr"
+}

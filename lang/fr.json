@@ -1,0 +1,10 @@
+{
+    "NOLATAUTOMATIONS": {
+        "Macros": {
+            "mirrorImage": {
+                "Hit": "L'attaque a touché un duplicata et l'a détruit.",
+                "Miss": "L'attaque a ciblé un duplicata et a échoué."
+            }
+        }
+    }
+}
