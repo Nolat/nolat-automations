@@ -171,7 +171,7 @@ async function attacked({ trigger: { entity: effect }, workflow }) {
     if (workflow.attackTotal >= duplicateAC) {
         ChatMessage.create({
             speaker: workflow.chatCard.speaker,
-            content: genericUtils.translate("NOLATAUTOMATIONS.Macros.mirrorImage.Hit"),
+            content: genericUtils.translate("NOLATAUTOMATIONS.Macros.MirrorImage.Hit"),
         });
 
         Sequencer.EffectManager.endEffects({ name: `image-${duplicates}` }, targetToken);
@@ -184,7 +184,7 @@ async function attacked({ trigger: { entity: effect }, workflow }) {
     } else {
         ChatMessage.create({
             speaker: workflow.chatCard.speaker,
-            content: genericUtils.translate("NOLATAUTOMATIONS.Macros.mirrorImage.Miss"),
+            content: genericUtils.translate("NOLATAUTOMATIONS.Macros.MirrorImage.Miss"),
         });
     }
 }

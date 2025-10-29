@@ -1,9 +1,15 @@
 {
     "NOLATAUTOMATIONS": {
         "Macros": {
-            "mirrorImage": {
+            "MirrorImage": {
                 "Hit": "L'attaque a touché un duplicata et l'a détruit.",
                 "Miss": "L'attaque a ciblé un duplicata et a échoué."
+            },
+            "MagicMissile": {
+                "Bolt": "Projectile Chaotique",
+                "RollEach": "Lancer les dégâts pour chaque projectile ?",
+                "Select": "Combien ? (Max : {maxMissiles})",
+                "Shield": "Bouclier en réaction ?"
             }
         }
     }

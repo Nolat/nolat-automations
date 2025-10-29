@@ -1,0 +1,397 @@
+{
+    "type": "spell",
+    "system": {
+        "description": {
+            "value": "<p>Vous créez trois fléchettes magique de couleur différentes. Chaque fléchette atteint une créature de votre choix que vous pouvez voir et dans la limite de portée du sort. Chaque projectile inflige 1d4 + 1 dégâts à sa cible. Les fléchettes frappent simultanément, et peuvent frapper une ou plusieurs créatures.</p><p><strong>Aux niveaux supérieurs.</strong> Lorsque le sort est lancé en utilisant un emplacement de sort de niveau 2 ou plus, il crée une fléchette additionnelle pour chaque niveau d'emplacement supérieur au niveau 3.</p>",
+            "chat": ""
+        },
+        "source": {
+            "custom": "Basic Rules, Player's Handbook pg 257",
+            "revision": 1,
+            "rules": "2014"
+        },
+        "activation": {
+            "type": "action",
+            "condition": "",
+            "value": 1
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "target": {
+            "affects": {
+                "type": "creature",
+                "count": "",
+                "choice": false,
+                "special": ""
+            },
+            "template": {
+                "units": "ft",
+                "contiguous": false,
+                "type": ""
+            }
+        },
+        "range": {
+            "value": "36",
+            "units": "m",
+            "special": ""
+        },
+        "uses": {
+            "max": "",
+            "spent": 0,
+            "recovery": []
+        },
+        "ability": "",
+        "level": 1,
+        "school": "evo",
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": 0,
+            "supply": 0
+        },
+        "properties": ["vocal", "somatic"],
+        "activities": {
+            "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "utility",
+                "activation": {
+                    "type": "action",
+                    "value": null,
+                    "override": false
+                },
+                "consumption": {
+                    "targets": [],
+                    "scaling": {
+                        "allowed": false,
+                        "max": ""
+                    },
+                    "spellSlot": true
+                },
+                "duration": {
+                    "units": "inst",
+                    "concentration": false,
+                    "override": false
+                },
+                "effects": [],
+                "range": {
+                    "override": false,
+                    "units": "self"
+                },
+                "target": {
+                    "prompt": true,
+                    "template": {
+                        "contiguous": false,
+                        "units": "ft"
+                    },
+                    "affects": {
+                        "choice": false
+                    },
+                    "override": false
+                },
+                "uses": {
+                    "spent": 0,
+                    "max": "",
+                    "recovery": []
+                },
+                "roll": {
+                    "formula": "",
+                    "name": "",
+                    "prompt": false,
+                    "visible": false
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "effectConditionText": "",
+                "name": "",
+                "useConditionReason": "",
+                "macroData": {
+                    "name": "",
+                    "command": ""
+                },
+                "ignoreTraits": {
+                    "idi": false,
+                    "idr": false,
+                    "idv": false,
+                    "ida": false,
+                    "idm": false
+                },
+                "midiProperties": {
+                    "ignoreTraits": [],
+                    "triggeredActivityId": "none",
+                    "triggeredActivityConditionText": "",
+                    "triggeredActivityTargets": "targets",
+                    "triggeredActivityRollAs": "self",
+                    "forceDamageDialog": "",
+                    "confirmTargets": "always",
+                    "autoTargetType": "any",
+                    "autoTargetAction": "default",
+                    "automationOnly": false,
+                    "otherActivityCompatible": true,
+                    "otherActivityAsParentType": true,
+                    "identifier": "",
+                    "displayActivityName": false,
+                    "rollMode": "default",
+                    "chooseEffects": false,
+                    "toggleEffect": false,
+                    "ignoreFullCover": false,
+                    "removeChatButtons": "default",
+                    "magicEffect": false,
+                    "magicDamage": false,
+                    "noConcentrationCheck": false,
+                    "autoCEEffects": "none",
+                    "autoConsume": false,
+                    "forceConsumeDialog": "default",
+                    "forceRollDialog": "default"
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                    "saveRemoves": true,
+                    "preRemoveConditionText": "",
+                    "postRemoveConditionText": ""
+                },
+                "otherActivityId": "none",
+                "otherActivityAsParentType": true
+            },
+            "zHpeqUnoKjOjo5aN": {
+                "type": "damage",
+                "sort": 0,
+                "activation": {
+                    "type": "special",
+                    "value": null,
+                    "override": true,
+                    "condition": ""
+                },
+                "consumption": {
+                    "scaling": {
+                        "allowed": false
+                    },
+                    "spellSlot": false,
+                    "targets": []
+                },
+                "description": {
+                    "chatFlavor": ""
+                },
+                "duration": {
+                    "units": "inst",
+                    "concentration": false,
+                    "override": false
+                },
+                "effects": [],
+                "range": {
+                    "override": true,
+                    "units": "any",
+                    "special": ""
+                },
+                "target": {
+                    "template": {
+                        "contiguous": false,
+                        "units": "ft",
+                        "type": ""
+                    },
+                    "affects": {
+                        "choice": false,
+                        "count": "1",
+                        "type": "creature",
+                        "special": ""
+                    },
+                    "override": true,
+                    "prompt": true
+                },
+                "uses": {
+                    "spent": 0,
+                    "recovery": [],
+                    "max": ""
+                },
+                "damage": {
+                    "critical": {
+                        "allow": false
+                    },
+                    "parts": [
+                        {
+                            "custom": {
+                                "enabled": false,
+                                "formula": ""
+                            },
+                            "number": 1,
+                            "denomination": 4,
+                            "bonus": "1",
+                            "types": ["none"],
+                            "scaling": {
+                                "mode": "",
+                                "number": 1
+                            }
+                        }
+                    ]
+                },
+                "useConditionText": "",
+                "effectConditionText": "",
+                "name": "Projectile",
+                "_id": "zHpeqUnoKjOjo5aN",
+                "useConditionReason": "",
+                "macroData": {
+                    "name": "",
+                    "command": ""
+                },
+                "ignoreTraits": {
+                    "idi": false,
+                    "idr": false,
+                    "idv": false,
+                    "ida": false,
+                    "idm": false
+                },
+                "midiProperties": {
+                    "ignoreTraits": [],
+                    "triggeredActivityId": "none",
+                    "triggeredActivityConditionText": "",
+                    "triggeredActivityTargets": "targets",
+                    "triggeredActivityRollAs": "self",
+                    "forceDamageDialog": "",
+                    "confirmTargets": "default",
+                    "autoTargetType": "any",
+                    "autoTargetAction": "default",
+                    "automationOnly": false,
+                    "otherActivityCompatible": true,
+                    "otherActivityAsParentType": true,
+                    "identifier": "",
+                    "displayActivityName": false,
+                    "rollMode": "default",
+                    "chooseEffects": false,
+                    "toggleEffect": false,
+                    "ignoreFullCover": false,
+                    "removeChatButtons": "default",
+                    "magicEffect": false,
+                    "magicDamage": false,
+                    "noConcentrationCheck": false,
+                    "autoCEEffects": "none",
+                    "autoConsume": false,
+                    "forceConsumeDialog": "default",
+                    "forceRollDialog": "default"
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                    "saveRemoves": true,
+                    "preRemoveConditionText": "",
+                    "postRemoveConditionText": ""
+                }
+            }
+        },
+        "identifier": "chaotic-missile",
+        "sourceClass": "wizard",
+        "method": "spell",
+        "prepared": 1
+    },
+    "name": "Projectile chaotique de Seiko",
+    "flags": {
+        "core": {},
+        "midi-qol": {
+            "effectActivation": false,
+            "rollAttackPerTarget": "default",
+            "itemCondition": "",
+            "effectCondition": "",
+            "AoETargetType": "any",
+            "AoETargetTypeIncludeSelf": true,
+            "autoTarget": "default",
+            "removeAttackDamageButtons": "default",
+            "reactionCondition": "",
+            "otherCondition": ""
+        },
+        "midiProperties": {
+            "nodam": false,
+            "fulldam": false,
+            "halfdam": false,
+            "autoFailFriendly": false,
+            "autoSaveFriendly": false,
+            "rollOther": false,
+            "critOther": false,
+            "offHandWeapon": false,
+            "magicdam": false,
+            "magiceffect": false,
+            "concentration": false,
+            "toggleEffect": false,
+            "ignoreTotalCover": false,
+            "confirmTargets": "default",
+            "noConcentrationCheck": false,
+            "idr": false,
+            "idi": false,
+            "idv": false,
+            "ida": false
+        },
+        "dnd5e": {
+            "last": {
+                "chaoticMissileBolt": {
+                    "damageType": {
+                        "0": "force"
+                    }
+                },
+                "VH7HwxXvnFU22CxV": {
+                    "damageType": {
+                        "0": "force"
+                    }
+                },
+                "zHpeqUnoKjOjo5aN": {
+                    "damageType": {
+                        "0": "force"
+                    }
+                }
+            },
+            "riders": {
+                "activity": ["zHpeqUnoKjOjo5aN"]
+            }
+        },
+        "scene-packer": {
+            "hash": "d2e89ba17f2865d9b9370be99c0a97f510c041d0",
+            "sourceId": "Item.6YbMEkyPuXtRC2JK"
+        },
+        "chris-premades": {
+            "info": {
+                "name": "Projectile chaotique de Seiko",
+                "version": "1.0.0",
+                "hasAnimation": true,
+                "identifier": "chaoticMissile",
+                "source": "nolat-automations.NASpells",
+                "rules": "legacy"
+            },
+            "macros": {
+                "midi": {
+                    "item": ["chaoticMissile"]
+                }
+            },
+            "hiddenActivities": ["chaoticMissileBolt"],
+            "config": {
+                "rollEach": true
+            },
+            "activityIdentifiers": {
+                "chaoticMissileBolt": "zHpeqUnoKjOjo5aN",
+                "chaoticMissile": "dnd5eactivity000"
+            },
+            "spellActivities": ["chaoticMissileBolt"]
+        }
+    },
+    "effects": [],
+    "img": "icons/magic/light/projectiles-pink-purple.webp",
+    "folder": null,
+    "_stats": {
+        "compendiumSource": "Compendium.nolat-automations.NASpells.Item.6YbMEkyPuXtRC2JK",
+        "duplicateSource": null,
+        "exportSource": {
+            "worldId": "saison-1",
+            "uuid": "Item.6YbMEkyPuXtRC2JK",
+            "coreVersion": "13.350",
+            "systemId": "dnd5e",
+            "systemVersion": "5.1.10"
+        },
+        "coreVersion": "13.350",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1761753342781,
+        "modifiedTime": 1761753361324,
+        "lastModifiedBy": "S16Hc7R0JtsOUSv0"
+    },
+    "ownership": {
+        "default": 0
+    },
+    "_id": "6YbMEkyPuXtRC2JK",
+    "_key": "!items!6YbMEkyPuXtRC2JK"
+}
