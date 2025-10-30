@@ -1,0 +1,283 @@
+{
+    "type": "spell",
+    "system": {
+        "description": {
+            "value": "<p>Vous déformez magiquement l’espace autour d’une autre créature que vous pouvez voir à portée. La cible doit réussir un jet de sauvegarde de Constitution (elle peut choisir d’échouer) ou être téléportée vers un emplacement inoccupé de votre choix que vous pouvez voir à portée. L’emplacement choisi doit se trouver sur une surface ou dans un liquide capable de supporter la cible sans qu’elle n’ait à se contorsionner.</p><p><strong>À plus haut niveau.</strong> Lorsque vous lancez ce sort en utilisant un emplacement de sort de niveau 3 ou plus, la portée du sort augmente de 9 mètres pour chaque niveau d’emplacement au-delà du 2e.</p>",
+            "chat": ""
+        },
+        "source": {
+            "book": "Strixhaven: A Curriculum of Chaos",
+            "page": "38",
+            "license": "",
+            "custom": "",
+            "revision": 1,
+            "rules": "2014"
+        },
+        "activation": {
+            "type": "action",
+            "condition": "",
+            "value": 1
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "target": {
+            "affects": {
+                "type": "creature",
+                "count": "",
+                "choice": false,
+                "special": ""
+            },
+            "template": {
+                "units": "ft",
+                "contiguous": false,
+                "type": ""
+            }
+        },
+        "range": {
+            "value": "27",
+            "units": "m",
+            "special": ""
+        },
+        "uses": {
+            "max": "",
+            "spent": 0,
+            "recovery": []
+        },
+        "ability": "",
+        "level": 2,
+        "school": "con",
+        "properties": ["vocal", "somatic"],
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": 0,
+            "supply": 0
+        },
+        "activities": {
+            "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "save",
+                "activation": {
+                    "type": "action",
+                    "value": null,
+                    "override": false
+                },
+                "consumption": {
+                    "targets": [],
+                    "scaling": {
+                        "allowed": false,
+                        "max": ""
+                    },
+                    "spellSlot": true
+                },
+                "description": {
+                    "chatFlavor": ""
+                },
+                "duration": {
+                    "units": "inst",
+                    "concentration": false,
+                    "override": false
+                },
+                "effects": [],
+                "range": {
+                    "override": false,
+                    "units": "self",
+                    "special": ""
+                },
+                "target": {
+                    "prompt": true,
+                    "template": {
+                        "contiguous": false,
+                        "units": "ft"
+                    },
+                    "affects": {
+                        "choice": false
+                    },
+                    "override": false
+                },
+                "uses": {
+                    "spent": 0,
+                    "max": "",
+                    "recovery": []
+                },
+                "damage": {
+                    "onSave": "half",
+                    "parts": [],
+                    "critical": {
+                        "allow": false
+                    }
+                },
+                "save": {
+                    "ability": ["con"],
+                    "dc": {
+                        "calculation": "spellcasting",
+                        "formula": ""
+                    }
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "effectConditionText": "",
+                "name": "",
+                "useConditionReason": "",
+                "macroData": {
+                    "name": "",
+                    "command": ""
+                },
+                "ignoreTraits": {
+                    "idi": false,
+                    "idr": false,
+                    "idv": false,
+                    "ida": false,
+                    "idm": false
+                },
+                "midiProperties": {
+                    "ignoreTraits": [],
+                    "triggeredActivityId": "none",
+                    "triggeredActivityConditionText": "",
+                    "triggeredActivityTargets": "targets",
+                    "triggeredActivityRollAs": "self",
+                    "forceDamageDialog": "false",
+                    "confirmTargets": "default",
+                    "autoTargetType": "any",
+                    "autoTargetAction": "default",
+                    "automationOnly": false,
+                    "otherActivityCompatible": true,
+                    "otherActivityAsParentType": true,
+                    "identifier": "",
+                    "displayActivityName": false,
+                    "rollMode": "default",
+                    "chooseEffects": false,
+                    "toggleEffect": false,
+                    "ignoreFullCover": false,
+                    "removeChatButtons": "default",
+                    "magicEffect": false,
+                    "magicDamage": false,
+                    "noConcentrationCheck": false,
+                    "autoCEEffects": "default",
+                    "autoConsume": false,
+                    "forceConsumeDialog": "default",
+                    "forceRollDialog": "default"
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                    "saveRemoves": true,
+                    "preRemoveConditionText": "",
+                    "postRemoveConditionText": ""
+                },
+                "otherActivityId": "",
+                "otherActivityAsParentType": true,
+                "friendlySave": "default"
+            }
+        },
+        "identifier": "vortex-warp",
+        "sourceClass": "",
+        "method": "spell",
+        "prepared": 0
+    },
+    "name": "Vortex de distorsion",
+    "flags": {
+        "ddbimporter": {
+            "id": 10075689,
+            "definitionId": 1239805,
+            "entityTypeId": 435869154,
+            "dndbeyond": {
+                "lookup": "generic",
+                "lookupName": "generic",
+                "level": null,
+                "castAtLevel": null
+            },
+            "originalName": "Vortex Warp",
+            "sources": [
+                {
+                    "sourceId": 80,
+                    "pageNumber": 38,
+                    "sourceType": 1
+                }
+            ],
+            "tags": ["Teleportation"],
+            "version": "5.1.26",
+            "effectsApplied": true
+        },
+        "midi-qol": {
+            "removeAttackDamageButtons": "default",
+            "rollAttackPerTarget": "default",
+            "itemCondition": "",
+            "effectCondition": "",
+            "AoETargetType": "any",
+            "AoETargetTypeIncludeSelf": true,
+            "autoTarget": "default",
+            "reactionCondition": "",
+            "otherCondition": ""
+        },
+        "midiProperties": {
+            "confirmTargets": "default",
+            "magicdam": true,
+            "magiceffect": true,
+            "autoFailFriendly": false,
+            "autoSaveFriendly": false,
+            "critOther": false,
+            "offHandWeapon": false,
+            "noConcentrationCheck": false,
+            "toggleEffect": false,
+            "ignoreTotalCover": false,
+            "idr": false,
+            "idi": false,
+            "idv": false,
+            "ida": false
+        },
+        "dnd5e": {
+            "riders": {
+                "activity": [],
+                "effect": []
+            }
+        },
+        "chris-premades": {
+            "info": {
+                "name": "Vortex de distorsion",
+                "version": "1.0.0",
+                "identifier": "vortexWarp",
+                "source": "nolat-automations",
+                "hasAnimation": true
+            },
+            "config": {
+                "playAnimation": true
+            },
+            "macros": {
+                "midi": {
+                    "item": ["vortexWarp"]
+                }
+            }
+        },
+        "scene-packer": {
+            "hash": "0329abe88227ebab25be84e96640e182323fdd04",
+            "sourceId": "Item.NwzJd2OpTyCSvOsr"
+        }
+    },
+    "effects": [],
+    "img": "icons/magic/water/vortex-water-whirlpool-blue.webp",
+    "folder": null,
+    "_stats": {
+        "compendiumSource": "Compendium.chris-premades.CPRSpells.Item.PTrGIyuolcil7nTH",
+        "duplicateSource": null,
+        "exportSource": {
+            "worldId": "saison-1",
+            "uuid": "Item.NwzJd2OpTyCSvOsr",
+            "coreVersion": "13.350",
+            "systemId": "dnd5e",
+            "systemVersion": "5.1.10"
+        },
+        "coreVersion": "13.350",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1761814302947,
+        "modifiedTime": 1761815402769,
+        "lastModifiedBy": "S16Hc7R0JtsOUSv0"
+    },
+    "ownership": {
+        "default": 0
+    },
+    "_id": "NwzJd2OpTyCSvOsr",
+    "_key": "!items!NwzJd2OpTyCSvOsr"
+}

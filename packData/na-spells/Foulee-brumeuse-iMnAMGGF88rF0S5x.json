@@ -1,0 +1,254 @@
+{
+    "type": "spell",
+    "system": {
+        "description": {
+            "value": "<p>Une brume argentée vous enveloppe puis vous vous téléportez jusqu'à 9 mètres dans un espace inoccupé que vous pouvez voir.</p>",
+            "chat": ""
+        },
+        "source": {
+            "custom": "Basic Rules, Player's Handbook pg 260",
+            "revision": 1,
+            "rules": "2014"
+        },
+        "activation": {
+            "type": "bonus",
+            "condition": "",
+            "value": 1
+        },
+        "duration": {
+            "value": "",
+            "units": "inst"
+        },
+        "target": {
+            "affects": {
+                "type": "self",
+                "count": "",
+                "choice": false,
+                "special": ""
+            },
+            "template": {
+                "units": "ft",
+                "contiguous": false,
+                "type": ""
+            }
+        },
+        "range": {
+            "units": "self",
+            "special": ""
+        },
+        "uses": {
+            "max": "",
+            "spent": 0,
+            "recovery": []
+        },
+        "ability": "",
+        "level": 2,
+        "school": "con",
+        "materials": {
+            "value": "",
+            "consumed": false,
+            "cost": 0,
+            "supply": 0
+        },
+        "properties": ["vocal"],
+        "activities": {
+            "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "utility",
+                "activation": {
+                    "type": "action",
+                    "value": null,
+                    "override": false
+                },
+                "consumption": {
+                    "targets": [],
+                    "scaling": {
+                        "allowed": false,
+                        "max": ""
+                    },
+                    "spellSlot": true
+                },
+                "description": {
+                    "chatFlavor": ""
+                },
+                "duration": {
+                    "units": "inst",
+                    "concentration": false,
+                    "override": false
+                },
+                "effects": [],
+                "range": {
+                    "override": false,
+                    "units": "self"
+                },
+                "target": {
+                    "prompt": true,
+                    "template": {
+                        "contiguous": false,
+                        "units": "ft"
+                    },
+                    "affects": {
+                        "choice": false
+                    },
+                    "override": false
+                },
+                "uses": {
+                    "spent": 0,
+                    "max": "",
+                    "recovery": []
+                },
+                "roll": {
+                    "formula": "",
+                    "name": "",
+                    "prompt": false,
+                    "visible": false
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "effectConditionText": "",
+                "useConditionReason": "",
+                "macroData": {
+                    "name": "",
+                    "command": ""
+                },
+                "ignoreTraits": {
+                    "idi": false,
+                    "idr": false,
+                    "idv": false,
+                    "ida": false,
+                    "idm": false
+                },
+                "midiProperties": {
+                    "ignoreTraits": [],
+                    "triggeredActivityId": "none",
+                    "triggeredActivityConditionText": "",
+                    "triggeredActivityTargets": "targets",
+                    "triggeredActivityRollAs": "self",
+                    "forceDamageDialog": "false",
+                    "confirmTargets": "default",
+                    "autoTargetType": "any",
+                    "autoTargetAction": "default",
+                    "automationOnly": false,
+                    "otherActivityCompatible": true,
+                    "otherActivityAsParentType": true,
+                    "identifier": "",
+                    "displayActivityName": false,
+                    "rollMode": "default",
+                    "chooseEffects": false,
+                    "toggleEffect": false,
+                    "ignoreFullCover": false,
+                    "removeChatButtons": "default",
+                    "magicEffect": false,
+                    "magicDamage": false,
+                    "noConcentrationCheck": false,
+                    "autoCEEffects": "default",
+                    "autoConsume": false,
+                    "forceConsumeDialog": "default",
+                    "forceRollDialog": "default"
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                    "saveRemoves": true,
+                    "preRemoveConditionText": "",
+                    "postRemoveConditionText": ""
+                },
+                "otherActivityId": "none",
+                "otherActivityAsParentType": true
+            }
+        },
+        "identifier": "misty-step",
+        "sourceClass": "",
+        "method": "spell",
+        "prepared": 0
+    },
+    "name": "Foulée brumeuse",
+    "flags": {
+        "midi-qol": {
+            "forceCEOff": true,
+            "effectActivation": false,
+            "rollAttackPerTarget": "default",
+            "itemCondition": "",
+            "effectCondition": "",
+            "AoETargetType": "any",
+            "AoETargetTypeIncludeSelf": true,
+            "autoTarget": "default",
+            "removeAttackDamageButtons": "default",
+            "reactionCondition": "",
+            "otherCondition": ""
+        },
+        "midiProperties": {
+            "nodam": false,
+            "fulldam": false,
+            "halfdam": false,
+            "autoFailFriendly": false,
+            "autoSaveFriendly": false,
+            "rollOther": false,
+            "critOther": false,
+            "offHandWeapon": false,
+            "magicdam": false,
+            "magiceffect": false,
+            "concentration": false,
+            "toggleEffect": false,
+            "ignoreTotalCover": false,
+            "confirmTargets": "default",
+            "noConcentrationCheck": false,
+            "idr": false,
+            "idi": false,
+            "idv": false,
+            "ida": false
+        },
+        "core": {},
+        "dnd5e": {
+            "riders": {
+                "activity": [],
+                "effect": []
+            }
+        },
+        "chris-premades": {
+            "info": {
+                "name": "Foulée brumeuse",
+                "version": "1.0.0",
+                "identifier": "mistyStep",
+                "source": "nolat-automations",
+                "hasAnimation": true
+            },
+            "macros": {
+                "midi": {
+                    "item": ["mistyStep"]
+                }
+            },
+            "config": {
+                "playAnimation": true
+            }
+        },
+        "scene-packer": {
+            "hash": "66cb5a90bf3b9518aa72cab76110a04dc59cafd2",
+            "sourceId": "Item.iMnAMGGF88rF0S5x"
+        }
+    },
+    "effects": [],
+    "img": "icons/magic/control/debuff-energy-snare-brown.webp",
+    "folder": null,
+    "_stats": {
+        "compendiumSource": "Compendium.chris-premades.CPRSpells.Item.SVAci8FYOO83jEQX",
+        "duplicateSource": null,
+        "exportSource": {
+            "worldId": "saison-1",
+            "uuid": "Item.iMnAMGGF88rF0S5x",
+            "coreVersion": "13.350",
+            "systemId": "dnd5e",
+            "systemVersion": "5.1.10"
+        },
+        "coreVersion": "13.350",
+        "systemId": "dnd5e",
+        "systemVersion": "5.1.10",
+        "createdTime": 1761814449499,
+        "modifiedTime": 1761815058861,
+        "lastModifiedBy": "S16Hc7R0JtsOUSv0"
+    },
+    "ownership": {
+        "default": 0
+    },
+    "_id": "iMnAMGGF88rF0S5x",
+    "_key": "!items!iMnAMGGF88rF0S5x"
+}
