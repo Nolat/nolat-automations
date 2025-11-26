@@ -64,6 +64,13 @@
             "path": "packs/na-spells",
             "type": "Item",
             "module": "nolat-automations"
+        },
+        {
+            "name": "NAClassFeatures",
+            "label": "NA Class Features",
+            "path": "packs/na-class-features",
+            "type": "Item",
+            "module": "nolat-automations"
         }
     ],
     "packFolders": [

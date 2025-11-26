@@ -1,5 +1,5 @@
 import { compilePack, extractPack } from "@foundryvtt/foundryvtt-cli";
-let itemPacks = ["na-spells"];
+let itemPacks = ["na-spells", "na-class-features"];
 let actorPacks = [];
 for (let i of itemPacks) {
     await extractPack("packs/" + i, "packData/" + i, {
