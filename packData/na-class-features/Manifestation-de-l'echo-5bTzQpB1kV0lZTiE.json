@@ -1,0 +1,601 @@
+{
+    "name": "Manifestation de l'Écho",
+    "type": "feat",
+    "system": {
+        "description": {
+            "value": "<p>Vous pouvez utiliser une action bonus pour manifester magiquement un écho de vous-même dans un espace inoccupé que vous pouvez voir dans un rayon de 4,5 mètres. Cet écho est une image magique, translucide et grise de vous-même, qui persiste jusqu’à ce qu’il soit détruit, que vous le dissipiez par une action bonus, que vous manifestiez un autre écho ou que vous soyez neutralisé.</p><p>Votre écho a une CA égale à 14 + votre bonus de maîtrise, 1 point de vie, et est immunisé à tous les états. S’il doit effectuer un jet de sauvegarde, il utilise votre bonus de jet de sauvegarde. Il est de la même taille que vous et occupe son propre espace. À votre tour, vous pouvez mentalement ordonner à l’écho de se déplacer jusqu’à 9 mètres dans n’importe quelle direction (aucune action requise).</p><p>Si, à la fin de votre tour, votre écho se trouve à plus de 9 mètres de vous, il est détruit.</p><p>Vous pouvez utiliser l’écho de la manière suivante :</p><ul><li><p><strong>Téléportation.</strong> En tant qu’action bonus, vous pouvez vous téléporter, échangeant magiquement votre position avec celle de votre écho, au prix de 4,5 mètres de votre déplacement, quelle que soit la distance entre vous deux.</p></li><li><p><strong>Origine des attaques.</strong> Lorsque vous effectuez l’action Attaquer à votre tour, toute attaque que vous faites avec cette action peut provenir de votre espace ou de celui de l’écho. Vous choisissez pour chaque attaque.</p></li><li><p><strong>Attaque d’opportunité par l’écho.</strong> Lorsqu’une créature que vous pouvez voir à 1,5 mètre de votre écho se déplace d’au moins 1,5 mètre en s’en éloignant, vous pouvez utiliser votre réaction pour effectuer une attaque d’opportunité contre cette créature comme si vous étiez dans l’espace de l’écho.</p></li></ul>",
+            "chat": ""
+        },
+        "source": {
+            "custom": "",
+            "revision": 1,
+            "rules": "2014"
+        },
+        "uses": {
+            "max": "",
+            "spent": 0,
+            "recovery": []
+        },
+        "type": {
+            "value": "class",
+            "subtype": ""
+        },
+        "requirements": "",
+        "properties": [],
+        "prerequisites": {
+            "level": null,
+            "items": [],
+            "repeatable": false
+        },
+        "activities": {
+            "dnd5eactivity000": {
+                "_id": "dnd5eactivity000",
+                "type": "utility",
+                "activation": {
+                    "type": "bonus",
+                    "value": 1,
+                    "condition": "",
+                    "override": false
+                },
+                "consumption": {
+                    "targets": [],
+                    "scaling": {
+                        "allowed": false,
+                        "max": ""
+                    },
+                    "spellSlot": true
+                },
+                "description": {
+                    "chatFlavor": ""
+                },
+                "duration": {
+                    "concentration": false,
+                    "value": "",
+                    "units": "inst",
+                    "special": "",
+                    "override": false
+                },
+                "effects": [],
+                "range": {
+                    "value": "4.5",
+                    "units": "m",
+                    "special": "",
+                    "override": false
+                },
+                "target": {
+                    "template": {
+                        "count": "",
+                        "contiguous": false,
+                        "type": "",
+                        "size": "",
+                        "width": "",
+                        "height": "",
+                        "units": "ft"
+                    },
+                    "affects": {
+                        "count": "",
+                        "type": "",
+                        "choice": false,
+                        "special": ""
+                    },
+                    "prompt": true,
+                    "override": false
+                },
+                "uses": {
+                    "spent": 0,
+                    "max": "",
+                    "recovery": []
+                },
+                "roll": {
+                    "formula": "",
+                    "name": "",
+                    "prompt": false,
+                    "visible": false
+                },
+                "sort": 0,
+                "useConditionText": "",
+                "effectConditionText": "",
+                "name": "Manifester l'Écho",
+                "img": "icons/magic/control/sihouette-hold-beam-green.webp",
+                "useConditionReason": "",
+                "macroData": {
+                    "name": "",
+                    "command": ""
+                },
+                "ignoreTraits": {
+                    "idi": false,
+                    "idr": false,
+                    "idv": false,
+                    "ida": false,
+                    "idm": false
+                },
+                "midiProperties": {
+                    "ignoreTraits": [],
+                    "triggeredActivityId": "none",
+                    "triggeredActivityConditionText": "",
+                    "triggeredActivityTargets": "targets",
+                    "triggeredActivityRollAs": "self",
+                    "forceDamageDialog": "",
+                    "confirmTargets": "default",
+                    "autoTargetType": "any",
+                    "autoTargetAction": "default",
+                    "automationOnly": false,
+                    "otherActivityCompatible": true,
+                    "otherActivityAsParentType": true,
+                    "identifier": "",
+                    "displayActivityName": false,
+                    "rollMode": "default",
+                    "chooseEffects": false,
+                    "toggleEffect": false,
+                    "ignoreFullCover": false,
+                    "removeChatButtons": "default",
+                    "magicEffect": false,
+                    "magicDamage": false,
+                    "noConcentrationCheck": false,
+                    "autoCEEffects": "default",
+                    "autoConsume": false,
+                    "forceConsumeDialog": "default",
+                    "forceRollDialog": "default",
+                    "skipConcentrationCheck": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                    "saveRemoves": true,
+                    "preRemoveConditionText": "",
+                    "postRemoveConditionText": ""
+                },
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                    "level": {
+                        "min": null,
+                        "max": null
+                    },
+                    "requireAttunement": false,
+                    "requireIdentification": false,
+                    "requireMagic": false,
+                    "identifier": ""
+                },
+                "otherActivityAsParentType": true
+            },
+            "2WMo8Kiw2XxjGNp0": {
+                "type": "utility",
+                "_id": "2WMo8Kiw2XxjGNp0",
+                "sort": 0,
+                "activation": {
+                    "type": "bonus",
+                    "value": null,
+                    "override": false,
+                    "condition": ""
+                },
+                "consumption": {
+                    "scaling": {
+                        "allowed": false
+                    },
+                    "spellSlot": true,
+                    "targets": []
+                },
+                "description": {
+                    "chatFlavor": "Écho: Téléportation"
+                },
+                "duration": {
+                    "units": "inst",
+                    "concentration": false,
+                    "override": false
+                },
+                "effects": [],
+                "range": {
+                    "override": false,
+                    "units": "self",
+                    "special": ""
+                },
+                "target": {
+                    "template": {
+                        "contiguous": false,
+                        "units": "ft",
+                        "type": ""
+                    },
+                    "affects": {
+                        "choice": false,
+                        "count": "",
+                        "type": ""
+                    },
+                    "override": false,
+                    "prompt": true
+                },
+                "uses": {
+                    "spent": 0,
+                    "recovery": [],
+                    "max": ""
+                },
+                "roll": {
+                    "prompt": false,
+                    "visible": false,
+                    "name": "",
+                    "formula": ""
+                },
+                "useConditionText": "",
+                "effectConditionText": "",
+                "name": "Téléportation",
+                "img": "icons/magic/control/sihouette-hold-beam-green.webp",
+                "useConditionReason": "",
+                "macroData": {
+                    "name": "",
+                    "command": ""
+                },
+                "ignoreTraits": {
+                    "idi": false,
+                    "idr": false,
+                    "idv": false,
+                    "ida": false,
+                    "idm": false
+                },
+                "midiProperties": {
+                    "ignoreTraits": [],
+                    "triggeredActivityId": "none",
+                    "triggeredActivityConditionText": "",
+                    "triggeredActivityTargets": "targets",
+                    "triggeredActivityRollAs": "self",
+                    "forceDamageDialog": "",
+                    "confirmTargets": "default",
+                    "autoTargetType": "any",
+                    "autoTargetAction": "default",
+                    "automationOnly": false,
+                    "otherActivityCompatible": true,
+                    "otherActivityAsParentType": true,
+                    "identifier": "",
+                    "displayActivityName": false,
+                    "rollMode": "default",
+                    "chooseEffects": false,
+                    "toggleEffect": false,
+                    "ignoreFullCover": false,
+                    "removeChatButtons": "default",
+                    "magicEffect": false,
+                    "magicDamage": false,
+                    "noConcentrationCheck": false,
+                    "autoCEEffects": "default",
+                    "autoConsume": false,
+                    "forceConsumeDialog": "default",
+                    "forceRollDialog": "default",
+                    "skipConcentrationCheck": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                    "saveRemoves": true,
+                    "preRemoveConditionText": "",
+                    "postRemoveConditionText": ""
+                },
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                    "level": {
+                        "min": null,
+                        "max": null
+                    },
+                    "requireAttunement": false,
+                    "requireIdentification": false,
+                    "requireMagic": false,
+                    "identifier": ""
+                },
+                "otherActivityAsParentType": true
+            },
+            "xmL1Baf8CF6SKbO0": {
+                "type": "utility",
+                "_id": "xmL1Baf8CF6SKbO0",
+                "sort": 0,
+                "activation": {
+                    "type": "special",
+                    "value": null,
+                    "override": false,
+                    "condition": ""
+                },
+                "consumption": {
+                    "scaling": {
+                        "allowed": false
+                    },
+                    "spellSlot": true,
+                    "targets": []
+                },
+                "description": {
+                    "chatFlavor": "Écho: Attaque"
+                },
+                "duration": {
+                    "units": "inst",
+                    "concentration": false,
+                    "override": false
+                },
+                "effects": [],
+                "range": {
+                    "override": false,
+                    "units": "self",
+                    "special": ""
+                },
+                "target": {
+                    "template": {
+                        "contiguous": false,
+                        "units": "ft",
+                        "type": ""
+                    },
+                    "affects": {
+                        "choice": false,
+                        "count": "",
+                        "type": ""
+                    },
+                    "override": false,
+                    "prompt": true
+                },
+                "uses": {
+                    "spent": 0,
+                    "recovery": [],
+                    "max": ""
+                },
+                "roll": {
+                    "prompt": false,
+                    "visible": false,
+                    "name": "",
+                    "formula": ""
+                },
+                "useConditionText": "",
+                "effectConditionText": "",
+                "name": "Attaque",
+                "img": "icons/magic/control/sihouette-hold-beam-green.webp",
+                "useConditionReason": "",
+                "macroData": {
+                    "name": "",
+                    "command": ""
+                },
+                "ignoreTraits": {
+                    "idi": false,
+                    "idr": false,
+                    "idv": false,
+                    "ida": false,
+                    "idm": false
+                },
+                "midiProperties": {
+                    "ignoreTraits": [],
+                    "triggeredActivityId": "none",
+                    "triggeredActivityConditionText": "",
+                    "triggeredActivityTargets": "targets",
+                    "triggeredActivityRollAs": "self",
+                    "forceDamageDialog": "",
+                    "confirmTargets": "default",
+                    "autoTargetType": "any",
+                    "autoTargetAction": "default",
+                    "automationOnly": false,
+                    "otherActivityCompatible": true,
+                    "otherActivityAsParentType": true,
+                    "identifier": "",
+                    "displayActivityName": false,
+                    "rollMode": "default",
+                    "chooseEffects": false,
+                    "toggleEffect": false,
+                    "ignoreFullCover": false,
+                    "removeChatButtons": "default",
+                    "magicEffect": false,
+                    "magicDamage": false,
+                    "noConcentrationCheck": false,
+                    "autoCEEffects": "default",
+                    "autoConsume": false,
+                    "forceConsumeDialog": "default",
+                    "forceRollDialog": "default",
+                    "skipConcentrationCheck": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                    "saveRemoves": true,
+                    "preRemoveConditionText": "",
+                    "postRemoveConditionText": ""
+                },
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                    "level": {
+                        "min": null,
+                        "max": null
+                    },
+                    "requireAttunement": false,
+                    "requireIdentification": false,
+                    "requireMagic": false,
+                    "identifier": ""
+                },
+                "otherActivityAsParentType": true
+            },
+            "khztUgY57PVVbPNL": {
+                "type": "utility",
+                "_id": "khztUgY57PVVbPNL",
+                "sort": 0,
+                "activation": {
+                    "type": "bonus",
+                    "value": null,
+                    "override": false,
+                    "condition": ""
+                },
+                "consumption": {
+                    "scaling": {
+                        "allowed": false
+                    },
+                    "spellSlot": true,
+                    "targets": []
+                },
+                "description": {
+                    "chatFlavor": "Écho: Disparition"
+                },
+                "duration": {
+                    "units": "inst",
+                    "concentration": false,
+                    "override": false
+                },
+                "effects": [],
+                "range": {
+                    "override": false,
+                    "units": "self",
+                    "special": ""
+                },
+                "target": {
+                    "template": {
+                        "contiguous": false,
+                        "units": "ft",
+                        "type": ""
+                    },
+                    "affects": {
+                        "choice": false,
+                        "count": "",
+                        "type": ""
+                    },
+                    "override": false,
+                    "prompt": true
+                },
+                "uses": {
+                    "spent": 0,
+                    "recovery": [],
+                    "max": ""
+                },
+                "roll": {
+                    "prompt": false,
+                    "visible": false,
+                    "name": "",
+                    "formula": ""
+                },
+                "useConditionText": "",
+                "effectConditionText": "",
+                "name": "Disparition",
+                "img": "icons/magic/control/sihouette-hold-beam-green.webp",
+                "useConditionReason": "",
+                "macroData": {
+                    "name": "",
+                    "command": ""
+                },
+                "ignoreTraits": {
+                    "idi": false,
+                    "idr": false,
+                    "idv": false,
+                    "ida": false,
+                    "idm": false
+                },
+                "midiProperties": {
+                    "ignoreTraits": [],
+                    "triggeredActivityId": "none",
+                    "triggeredActivityConditionText": "",
+                    "triggeredActivityTargets": "targets",
+                    "triggeredActivityRollAs": "self",
+                    "forceDamageDialog": "",
+                    "confirmTargets": "default",
+                    "autoTargetType": "any",
+                    "autoTargetAction": "default",
+                    "automationOnly": false,
+                    "otherActivityCompatible": true,
+                    "otherActivityAsParentType": true,
+                    "identifier": "",
+                    "displayActivityName": false,
+                    "rollMode": "default",
+                    "chooseEffects": false,
+                    "toggleEffect": false,
+                    "ignoreFullCover": false,
+                    "removeChatButtons": "default",
+                    "magicEffect": false,
+                    "magicDamage": false,
+                    "noConcentrationCheck": false,
+                    "autoCEEffects": "default",
+                    "autoConsume": false,
+                    "forceConsumeDialog": "default",
+                    "forceRollDialog": "default",
+                    "skipConcentrationCheck": false
+                },
+                "isOverTimeFlag": false,
+                "overTimeProperties": {
+                    "saveRemoves": true,
+                    "preRemoveConditionText": "",
+                    "postRemoveConditionText": ""
+                },
+                "otherActivityId": "none",
+                "flags": {},
+                "visibility": {
+                    "level": {
+                        "min": null,
+                        "max": null
+                    },
+                    "requireAttunement": false,
+                    "requireIdentification": false,
+                    "requireMagic": false,
+                    "identifier": ""
+                },
+                "otherActivityAsParentType": true
+            }
+        },
+        "identifier": "manifest-echo",
+        "enchant": {},
+        "advancement": [],
+        "crewed": false
+    },
+    "flags": {
+        "midi-qol": {
+            "removeAttackDamageButtons": "default",
+            "onUseMacroName": "",
+            "effectActivation": false,
+            "itemCondition": "",
+            "reactionCondition": "",
+            "otherCondition": "",
+            "effectCondition": "",
+            "rollAttackPerTarget": "default",
+            "AoETargetType": "any",
+            "AoETargetTypeIncludeSelf": true,
+            "autoTarget": "default"
+        },
+        "midiProperties": {
+            "confirmTargets": "never",
+            "autoFailFriendly": false,
+            "autoSaveFriendly": false,
+            "rollOther": false,
+            "critOther": false,
+            "offHandWeapon": false,
+            "magicdam": false,
+            "magiceffect": false,
+            "concentration": false,
+            "noConcentrationCheck": false,
+            "toggleEffect": false,
+            "ignoreTotalCover": false,
+            "idr": false,
+            "idi": false,
+            "idv": false,
+            "ida": false
+        },
+        "core": {},
+        "dnd5e": {
+            "riders": {
+                "activity": ["2WMo8Kiw2XxjGNp0", "xmL1Baf8CF6SKbO0", "khztUgY57PVVbPNL"],
+                "effect": []
+            }
+        },
+        "chris-premades": {
+            "info": {
+                "name": "Manifest Echo",
+                "version": "1.0.0",
+                "identifier": "manifestEcho",
+                "source": "nolat-automations",
+                "hasAnimation": true,
+                "rules": "legacy"
+            },
+            "macros": {
+                "midi": {
+                    "item": ["manifestEcho"]
+                }
+            },
+            "hiddenActivities": ["manifestEchoTeleport", "manifestEchoAttack", "manifestEchoDismiss"],
+            "activityIdentifiers": {
+                "manifestEcho": "dnd5eactivity000",
+                "manifestEchoTeleport": "2WMo8Kiw2XxjGNp0",
+                "manifestEchoAttack": "xmL1Baf8CF6SKbO0",
+                "manifestEchoDismiss": "khztUgY57PVVbPNL"
+            }
+        },
+        "scene-packer": {
+            "hash": "d75a91f8fe9854c7bca2d19f7fa43bef7d29f656",
+            "sourceId": "Item.5bTzQpB1kV0lZTiE"
+        }
+    },
+    "effects": [],
+    "img": "icons/magic/control/sihouette-hold-beam-green.webp",
+    "folder": null,
+    "_id": "5bTzQpB1kV0lZTiE",
+    "_key": "!items!5bTzQpB1kV0lZTiE"
+}
